@@ -1,0 +1,100 @@
+---
+title: "percobaan M2"
+author: "Moh Okka Omarrosi"
+date: "2023-09-07"
+output:
+  html_document: default
+---
+
+# Write comment in RMarkdown
+
+Plain text.
+
+Selamat belajar menggunakan RMarkdown.
+
+*Italic*
+
+_italic_
+
+**Bold**
+
+__bold__
+
+superscript^2^
+
+~~strikethrough~~
+
+1. List
+2. List
+
+- item 1
+
+- item 2
+
+  + sub-item 1
+
+  + sub-item 2
+
+* item 1
+
+* item 2
+
+  + sub-item 1
+
+  + sub-item 2
+
+Table Header | Second Header 
+------------ | -------------
+Cell 1       | Cell 2
+Cell 3       | Cell 4
+
+Footnote.[^1]
+
+[^1]: The footnote.
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+# Menuliskan rumus matematis
+
+Inline equation, $E = mC^{2}$
+
+Inline equation, $f(k) = {n \choose k} p^{k} (1-p)^{n-k}$
+$$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$
+$$\begin{array}{ccc}
+x_{11} & x_{12} & x_{13}\\
+x_{21} & x_{22} & x_{23}
+\end{array}$$
+$$\Theta = \begin{pmatrix}\alpha & \beta\\
+\gamma & \delta
+\end{pmatrix}$$
+# Menuliskan code di dalam chunk Untuk menggunakan code chunk, pengguna bisa melakukan beberapa cara. Salah
+satunya adalah ketikkan ``` {r} dan ditutup dengan ```. Berikut contohnya:
+```{r}
+print("Hello world 1")
+```
+Apabila pengguna tidak ingin code yang sudah ditulis tampil, maka tambahkan
+*eval = TRUE, echo = FALSE*
+Berikut contohnya:
+```{r eval = TRUE, echo = FALSE}
+print("Hello world 2")
+```
+**Membuat plot sederhana**
+```{r}
+plot(iris)
+```
+
+```{r}
+par(mar = c(4, 4, .2, .1))
+plot(cars, pch = 19)
+plot(pressure, pch = 17)
+```
+
+
