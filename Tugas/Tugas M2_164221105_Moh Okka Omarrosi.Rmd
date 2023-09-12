@@ -1,0 +1,128 @@
+---
+title: "Tugas Praktikum M2"
+author: "Moh Okka Omarrosi"
+date: "2023-09-08"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Nomor 1
+
+#### *Buatlah program sederhana yang berisi beberapa variabel kemudian cetak menggunakan perintah print().*
+
+### Jawab :
+ 
+**Deklarasi Variabel**
+```{r}
+total_sks <- 23
+total_bobot <- 70
+```
+
+```{r}
+ratarata <- total_bobot/total_sks
+ratarata
+```
+
+#### Penejelasan
+
+Di atas ini adalah program sederhana untuk menghitung rata rata dari nilai sks berdasarkan total sks dan bobot yang di dapatkan. Lalu kita buat perintah untuk menghitung rata-rata nilai dengan cara variabel **total_sks** dan **total_bobot** Di bagi di dalam variabel **ratarata** ```{r} ratarata <- total_bobot/total_sks ``` dan juga Kita Cetak Nilainya dengan cara kita menulis variabel *ratarata* 
+
+## Nomor 2
+
+#### *Buatlah program sederhana dengan mengimplementasikan struktur percabangan.*
+
+### Jawab :
+ 
+```{r}
+if ( ratarata >= 2.5) {
+  print("Nilai Sangat Bagus")
+} else if (ratarata <= 2.5) {
+  print("Nilai Cukup")
+}
+```
+#### Penejelasan
+
+Karena di atas kita sudah mendeklarsaikan variabel maka disini saya akan memanfaatkan variabel di atas untuk membuat percabangan. ```{r} if ( ratarata >= 2.5) { print("Nilai Sangat Bagus") }``` *jika rata rata di atas 2.5 maka akan mencetak "Nilai sangat bagus"*. Jika Nilai rata rata di bawah 2.5 maka akan dialihkan ke kondisi lain yang kita buat di bawah ```{r} if ``` yaitu dia akan mengecek di kondisi ```{r} else if ``` 
+
+
+## Nomor 3
+
+#### *Buatlah program sederhana dengan mengimplementasikan struktur perulangan.*
+
+### Jawab :
+
+```{r}
+for (y in 1:11) {
+  print(y)
+}
+```
+
+#### Penejelasan
+saya menggunakan perulangan for, perulangan for ini digunakan ketika kita tahu pasti berapa kali perulangan yang dibutuhkan.
+
+## Nomor 4
+
+#### *Buatlah struktur data (R Vectors, Matrices, Arrays, Lists, Data Frame, dan Factors).*
+
+### Jawab :
+
+**Vector of string**
+
+```{r}
+fakultas <- c("farmasi", "FTMM", "FH", "FISIP", "FEB")
+# Print fruits
+fakultas
+```
+
+**List of strings**
+```{r}
+ini_list <- list("FPK", "FST", "FKP")
+# Print the list
+ini_list
+```
+
+
+**matrix**
+```{r}
+x <- matrix(8:16, nrow = 3, ncol = 3, byrow = TRUE)
+# Print the matrix
+x
+```
+
+**Array**
+```{r}
+thisarray <- c(1:24)
+thisarray
+multiarray <- array(thisarray, dim = c(4, 3, 2))
+multiarray
+```
+
+
+**data frame**
+
+```{r}
+Data_Frame <- data.frame (
+  Training = c("Tinngi", "Berat", "Stamina"),
+  Pulse = c(80, 100, 120),
+  Duration = c(40, 30, 60)
+)
+# Print the data frame
+Data_Frame
+# Summarize data
+summary(Data_Frame)
+```
+**factor**
+```{r}
+music_genre <- factor(c("Jazz", "Rock", "Classic",
+                        "Classic", "Pop", "Jazz", "Rock", "Jazz"))
+# Print the factor
+music_genre
+```
+
+
+
+
+
+
+
